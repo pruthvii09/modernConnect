@@ -23,7 +23,7 @@
     padding: 0px 10px 0px 10px;
 }
 .nav_link:hover{
-    background-color: #fff;
+    background-color: #e0e8f9;
     color: blue;
 }
 .nav_link i{
@@ -42,7 +42,7 @@
 }
 .verify_user{
     margin-top: 20px;
-    background-color: #e9f0ff;
+    background-color: #e0e8f9;
     /* width: 65%; */
     border-radius: 8px;
     border: 1px solid rgb(161, 161, 161);
@@ -87,7 +87,7 @@
     width: 60%;
 }
 .other{
-    width: 20%;
+    width: 35%;
 }
 .user_info{
     display: flex;
@@ -113,7 +113,7 @@
 .map_div{
     margin: 25px 25px 15px 30px;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: #e0e8f9;
     -webkit-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 -moz-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
@@ -126,34 +126,16 @@ box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 .username{
     font-size: 15px;
 }
-.input_post{
-    background-color: #e9f0ff;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-}
-.input_post input{
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 50px;
-    padding: 0rem 0rem 0rem 4rem;
-    position: relative;
-}
-.input_post .user_profile{
-    position: absolute;
-    font-size: 1.75rem;
-    z-index: 2;
-    top: 118px;
-    left: 377px;
-}
 .search_box{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 15px 15px 15px 0px;
     position: relative;
 }
 .search_box input{
     font-family: "Sora";
+    background-color: #e0e8f9;
     padding: 12px 10px 12px 38px;
     border-radius: 50px;
     font-size: 1rem;
@@ -163,7 +145,7 @@ box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 .search_box i{
     position: absolute; 
     font-size: 1.75rem;
-    left: 15px;
+    left: 30px;
     top: 24px;
 }
 .profile_view{
@@ -214,7 +196,7 @@ box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 .comment_section .input_comment input{
     width: 100%;
     font-family: "Sora";
-    padding: 10px;
+    padding: 12px;
     outline: none;
     border-radius: 50px;
     border: 1px solid rgb(207, 207, 207);
@@ -227,7 +209,7 @@ box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 .comment_section .input_comment i{
     position: absolute;
     font-size: 1.6rem;
-    top: 7px;
+    top: 9px;
     right: -10px;
 }
 .all_comments .picture {
@@ -238,4 +220,147 @@ box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 }
 .all_comments .picture img{
     width: 2.5rem;
+}
+.all_comments .main_comment{
+    font-size: 14px;
+    padding: 0px 0px 0px 40px;
+}
+.account img{
+    width: 2.5rem;
+    border-radius: 100%;
+}
+.account button{
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 8px;
+    background-color: black;
+    cursor: pointer;
+}
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.account_user{
+    margin-bottom: 35px;
+    border: 1px solid  rgb(207, 207, 207);
+    padding: 0px 5px 5px 5px;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+.account_user:hover{
+    background-color: #fff;
+    -webkit-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+}
+.account_about .account_name{
+    margin-top: -10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.account_about .account_designation{
+    margin-top: -0px;
+    font-size: 11px;
+    color: gray;
+}
+.post_input{
+    padding: 15px 0px 0px 10px;
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.post_button{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: fit-content;
+}
+.post_input .user_image img{
+    width: 2.5rem;
+    border-radius: 100%;
+}
+.post_fields textarea{
+    outline: none;
+    padding: 10px;
+    border: none;
+    font-family: "Sora";
+    font-size: 1.25rem;
+    resize: none;
+}
+.post_fields{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: relative;
+}
+.post_fields button{
+    position: absolute;
+    right: 15px;
+    font-family: "Sora";
+    bottom: 3px;
+    font-size: 1rem;
+    padding: 5px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+}
+.post_fields .post_about i{
+    font-size: 1.5rem;
+    position:absolute;
+    top: 8px;
+    right: 5px;
+
+}
+.post_fields .post_about{
+    position: relative;
+    outline: none;
+    color: blue;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+}
+.modal{
+    width: 250px;
+    z-index: 100;
+    border: none;
+    position: absolute;
+    top: 55px;
+    -webkit-box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.75);
+box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.75);
+    /* padding: 10px; */
+    background-color: white;
+    border-radius: 10px;
+}
+.modal .select_post{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.post_types div{
+    padding: 10px;
+}
+.post_types div:hover{
+    cursor:pointer;
+}
+.post_flex{
+    display: flex;
+    align-items: center;
+}
+.post_types img{
+    width: 2rem;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: blue;
+}
+.post_types div:hover{
+    background-color: aliceblue;
 }

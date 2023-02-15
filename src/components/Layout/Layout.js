@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import Profile from "../../assets/profile.png";
+import Profile2 from "../../assets/profile2.png";
+import Idea from "../../assets/idea.png";
+import Hand from "../../assets/agreement.png";
+import Trophy from "../../assets/trophy.png";
 import "./Layout.css";
 
 const Layout = () => {
-  const [commentshow, setCommentShow] = useState(true);
+  const [commentshow, setCommentShow] = useState(false);
+  const [post, setPost] = useState(true);
+  const [PostType, setPostType] = useState("Idea");
   return (
     <div className="layout_menu">
       <div className="flexbox navigate">
@@ -46,10 +52,68 @@ const Layout = () => {
         </div>
       </div>
       <div className="flexbox feed">
-        {/* <div className="input_post">
-          <i className="bx bxs-user user_profile"></i>
-          <input type="text" />
-        </div> */}
+        <div className="post_input">
+          <div className="user_image">
+            <img src={Profile2} alt="" />
+          </div>
+          <div className="post_fields">
+            <div
+              className="post_about"
+              onClick={() => {
+                setPost(!post);
+              }}
+            >
+              {PostType}
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            {post && (
+              <div className="modal">
+                <div className="select_post">Select Type of Post</div>
+                <div className="post_types">
+                  <div className="post_flex">
+                    <img src={Idea} alt="" />
+                    <div
+                      onClick={() => {
+                        setPostType("Idea");
+                        setPost(!post);
+                      }}
+                    >
+                      Idea
+                    </div>
+                  </div>
+                  <div className="post_flex">
+                    <img src={Hand} alt="" />
+                    <div
+                      onClick={() => {
+                        setPostType("Help");
+                        setPost(!post);
+                      }}
+                    >
+                      Help
+                    </div>
+                  </div>
+                  <div className="post_flex">
+                    <img src={Trophy} alt="" />
+                    <div
+                      onClick={() => {
+                        setPostType("Achivement");
+                        setPost(!post);
+                      }}
+                    >
+                      Achivement
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            <textarea
+              cols="57"
+              rows="2"
+              placeholder="Write about your post here"
+            ></textarea>
+            <button className="post_button">Post</button>
+          </div>
+        </div>
         <div className="map_div">
           <div className="user_info">
             <img src={Profile} alt="" />
@@ -88,9 +152,15 @@ const Layout = () => {
                   <i class="bx bx-send"></i>
                 </div>
                 <div className="all_comments">
-                  <div className="picture">
-                    <img src={Profile} alt="" />
-                    <span>anas_chaud</span>
+                  <div className="comment_map">
+                    <div className="picture">
+                      <img src={Profile2} alt="" />
+                      <span>pratikshaa__</span>
+                    </div>
+                    <div className="main_comment">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni quasi deleniti molestias officiis rerum, voluptas
+                    </div>
                   </div>
                 </div>
               </div>
@@ -143,6 +213,31 @@ const Layout = () => {
         <div className="profile_view">
           <div>
             <h5>People on ModernConnect</h5>
+          </div>
+          <div className="account_user">
+            <div className="account">
+              <img src={Profile} alt="" />
+              <button>View</button>
+            </div>
+            <div className="account_about">
+              <div className="account_name">Pruthviraj Auti</div>
+              <div className="account_designation">
+                Frontend developer at modernConnect at PES Modern College of
+                Enginnering
+              </div>
+            </div>
+          </div>
+          <div className="account_user">
+            <div className="account">
+              <img src={Profile} alt="" />
+              <button>View</button>
+            </div>
+            <div className="account_about">
+              <div className="account_name">Sarvesh Joshi</div>
+              <div className="account_designation">
+                Backend developer at RhytmFlows from SPPU Univesity, Pune
+              </div>
+            </div>
           </div>
         </div>
       </div>
