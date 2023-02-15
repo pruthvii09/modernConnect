@@ -1,0 +1,241 @@
+.layout_menu{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    padding: 0rem 2rem 0rem 2rem;
+}
+.layout_menu .flexbox{
+    border-right: 1px solid rgb(197, 197, 197);
+    /* width: 100%; */
+}
+.navigate{
+    width: 15%;
+    padding: 1rem 2rem;
+}
+
+.nav_link{
+    width: 10rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+}
+.nav_link:hover{
+    background-color: #fff;
+    color: blue;
+}
+.nav_link i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* margin: 0px 20px 0px 0px; */
+}
+.nav_link span{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.verify_user{
+    margin-top: 20px;
+    background-color: #e9f0ff;
+    /* width: 65%; */
+    border-radius: 8px;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 0px 5px 10px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.verify_img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0px 0px 0px;
+}
+.verify_img span{
+    font-weight: 600;
+    margin: 15px 0px 5px 0px;
+}
+.verify_user i{
+    color: green;
+    font-size: 3rem;
+    cursor: pointer;    
+}
+.verify_user .verify_p{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.verify_user button{
+    font-family: "Sora";
+    margin: 10px 0px 5px 0px;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 5px;
+}
+.feed{
+    width: 60%;
+}
+.other{
+    width: 20%;
+}
+.user_info{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 0rem 0.75rem ;
+}
+.user_info i{
+    font-size: 2rem;
+}
+.user_info span{
+    padding: 0px 0px 0px 13px;
+}
+.post{
+    padding: 0rem 4rem 2rem 5rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-left: 13px;
+}
+.map_div{
+    margin: 25px 25px 15px 30px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    -webkit-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+}
+.map_div img{
+    width: 3.5rem;
+    border-radius: 100%;
+    background-color: #e9f0ff;
+}
+.username{
+    font-size: 15px;
+}
+.input_post{
+    background-color: #e9f0ff;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.input_post input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50px;
+    padding: 0rem 0rem 0rem 4rem;
+    position: relative;
+}
+.input_post .user_profile{
+    position: absolute;
+    font-size: 1.75rem;
+    z-index: 2;
+    top: 118px;
+    left: 377px;
+}
+.search_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+}
+.search_box input{
+    font-family: "Sora";
+    padding: 12px 10px 12px 38px;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+.search_box i{
+    position: absolute; 
+    font-size: 1.75rem;
+    left: 15px;
+    top: 24px;
+}
+.profile_view{
+    padding: 20px 20px 20px 20px;
+}
+.profile_view h5{
+    margin: 0;padding: 0;
+}
+.profile_view div{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.profile_view p{
+    margin-top: 10px;
+    font-size: 10px;
+}
+.share_section{
+    font-size: 1.25rem;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0px 0px 0px;
+    gap: 80px;
+}
+.share_section div i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 6px;
+    border-radius:100%;
+}
+.share_section div i:hover{
+    color: blue;
+    cursor: pointer;
+    background-color: rgb(165, 165, 255);
+}
+.comment, .upvote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.comment p,.upvote p{
+    font-size: 15px;
+}
+.comment_section .input_comment input{
+    width: 100%;
+    font-family: "Sora";
+    padding: 10px;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid rgb(207, 207, 207);
+    /* position: relative; */
+}
+.comment_section .input_comment{
+    margin: 15px 0px 0px 0px;
+    position: relative;
+}
+.comment_section .input_comment i{
+    position: absolute;
+    font-size: 1.6rem;
+    top: 7px;
+    right: -10px;
+}
+.all_comments .picture {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.all_comments .picture img{
+    width: 2.5rem;
+}

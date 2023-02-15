@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600;800&display=swap');
+body{
+    font-family: "Sora";
+}
+.nav_menu{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 1.5rem 3rem 1.25rem 3rem;
+    border-bottom: 1px solid #b9b9b9;
+}
+.nav_menu .nav_heading{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nav_menu .nav_login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 2rem; */
+}
+.nav_login .login{
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    background: linear-gradient(140deg,#0d6ddf,#001ec1 80%);
+    color: #fff;
+    border-radius: 5px;
+}
+.nav_login .signup{
+    padding: 0rem 1rem 0rem 1rem;
+}
