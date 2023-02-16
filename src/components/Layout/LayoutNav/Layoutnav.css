@@ -1,0 +1,83 @@
+.flexbox{
+    border-right: 1px solid rgb(197, 197, 197);
+    /* width: 75%; */
+}
+.navigate{
+    /* width: 0%; */
+    padding: 1rem 1rem;
+}
+.flexbox a{
+    text-decoration: none;
+}
+.nav_link{
+    text-decoration: none;
+    color: black;
+    width: 10rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+}
+.nav_link:hover{
+    background-color: #e0e8f9;
+    color: blue;
+}
+.nav_link i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* margin: 0px 20px 0px 0px; */
+}
+.nav_link span{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.verify_user{
+    margin-top: 20px;
+    background-color: #e0e8f9;
+    /* width: 65%; */
+    border-radius: 8px;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 0px 5px 10px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.verify_img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0px 0px 0px;
+}
+.verify_img span{
+    font-weight: 600;
+    margin: 15px 0px 5px 0px;
+}
+.verify_user i{
+    color: green;
+    font-size: 3rem;
+    cursor: pointer;    
+}
+.verify_user .verify_p{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.verify_user button{
+    font-family: "Sora";
+    margin: 10px 0px 5px 0px;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 5px;
+}

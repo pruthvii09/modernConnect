@@ -1,0 +1,84 @@
+.other{
+    width: 35%;
+}
+.flexbox{
+    border-right: 1px solid rgb(197, 197, 197);
+    width: 100%;
+}
+.search_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+}
+.search_box input{
+    font-family: "Sora";
+    background-color: #e0e8f9;
+    padding: 12px 10px 12px 38px;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+.search_box i{
+    position: absolute;
+    font-size: 1.75rem;
+    left: 25px;
+    top: 25px;
+}
+.profile_view{
+    padding: 20px 20px 20px 20px;
+}
+.profile_view h5{
+    margin: 0;padding: 0;
+}
+.profile_view div{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.profile_view p{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.account img{
+    width: 2.5rem;
+    border-radius: 100%;
+}
+.account button{
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 8px;
+    background-color: black;
+    cursor: pointer;
+}
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.account_user{
+    margin-bottom: 35px;
+    border: 1px solid  rgb(207, 207, 207);
+    padding: 0px 5px 5px 5px;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+.account_user:hover{
+    background-color: #fff;
+    -webkit-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+}
+.account_about .account_name{
+    margin-top: -10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.account_about .account_designation{
+    margin-top: -0px;
+    font-size: 11px;
+    color: gray;
+}
