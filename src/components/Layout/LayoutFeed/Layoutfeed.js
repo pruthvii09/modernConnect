@@ -4,22 +4,22 @@ import Profile2 from "../../../assets/profile2.png";
 import Idea from "../../../assets/idea.png";
 import Hand from "../../../assets/agreement.png";
 import Trophy from "../../../assets/trophy.png";
-import "./Layoutfeed.css";
+import styles from "./Layoutfeed.module.css";
 
 const Layoutfeed = () => {
   const [commentshow, setCommentShow] = useState(false);
   const [post, setPost] = useState(false);
   const [PostType, setPostType] = useState("Idea");
   return (
-    <div>
-      <div className="flexbox feed">
-        <div className="post_input">
-          <div className="user_image">
+    <div className={styles.feed_section}>
+      <div className={`${styles.flexbox} ${styles.feed}`}>
+        <div className={styles.post_input}>
+          <div className={styles.user_image}>
             <img src={Profile2} alt="" />
           </div>
-          <div className="post_fields">
+          <div className={styles.post_fields}>
             <div
-              className="post_about"
+              className={styles.post_about}
               onClick={() => {
                 setPost(!post);
               }}
@@ -28,10 +28,10 @@ const Layoutfeed = () => {
               <i class="bx bx-chevron-down"></i>
             </div>
             {post && (
-              <div className="modal">
-                <div className="select_post">Select Type of Post</div>
-                <div className="post_types">
-                  <div className="post_flex">
+              <div className={styles.modal}>
+                <div className={styles.select_post}>Select Type of Post</div>
+                <div className={styles.post_types}>
+                  <div className={styles.post_flex}>
                     <img src={Idea} alt="" />
                     <div
                       onClick={() => {
@@ -42,7 +42,7 @@ const Layoutfeed = () => {
                       Idea
                     </div>
                   </div>
-                  <div className="post_flex">
+                  <div className={styles.post_flex}>
                     <img src={Hand} alt="" />
                     <div
                       onClick={() => {
@@ -53,7 +53,7 @@ const Layoutfeed = () => {
                       Help
                     </div>
                   </div>
-                  <div className="post_flex">
+                  <div className={styles.post_flex}>
                     <img src={Trophy} alt="" />
                     <div
                       onClick={() => {
@@ -72,24 +72,24 @@ const Layoutfeed = () => {
               rows="2"
               placeholder="Write about your post here"
             ></textarea>
-            <button className="post_button">Post</button>
+            <button className={styles.post_button}>Post</button>
           </div>
         </div>
-        <div className="map_div">
-          <div className="user_info">
+        <div className={styles.map_div}>
+          <div className={styles.user_info}>
             <img src={Profile} alt="" />
-            <div className="user">
-              <h6 className="username">pruthvii__</h6>
+            <div className={styles.user}>
+              <h6 className={styles.username}>pruthvii__</h6>
               <span>12h</span>
             </div>
           </div>
-          <div className="post">
+          <div className={styles.post}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             voluptatum, exercitationem unde blanditiis vel, beatae repellendus
             tenetur pariatur nemo sapiente odit natus ea similique! Explicabo
-            <div className="share_section">
+            <div className={styles.share_section}>
               <div
-                className="comment"
+                className={styles.comment}
                 onClick={() => {
                   setCommentShow(!commentshow);
                 }}
@@ -98,27 +98,27 @@ const Layoutfeed = () => {
                 <p>1</p>
               </div>
 
-              <div className="upvote">
+              <div className={styles.upvote}>
                 <i class="bx bx-up-arrow-alt"></i>
                 <p>1</p>
               </div>
-              <div className="share">
+              <div className={styles.share}>
                 <i class="bx bxs-share-alt"></i>
               </div>
             </div>
             {commentshow && (
-              <div className="comment_section">
-                <div className="input_comment">
+              <div className={styles.comment_section}>
+                <div className={styles.input_comment}>
                   <input type="text" placeholder="Share Your Thoughts !!" />
                   <i class="bx bx-send"></i>
                 </div>
-                <div className="all_comments">
-                  <div className="comment_map">
-                    <div className="picture">
+                <div className={styles.all_comments}>
+                  <div className={styles.comment_map}>
+                    <div className={styles.picture}>
                       <img src={Profile2} alt="" />
                       <span>pratikshaa__</span>
                     </div>
-                    <div className="main_comment">
+                    <div className={styles.main_comment}>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Magni quasi deleniti molestias officiis rerum, voluptas
                     </div>
@@ -128,33 +128,57 @@ const Layoutfeed = () => {
             )}
           </div>
         </div>
-        <div className="map_div">
-          <div className="user_info">
+        <div className={styles.map_div}>
+          <div className={styles.user_info}>
             <img src={Profile} alt="" />
-            <div className="user">
-              <h6 className="username">anas_chaud</h6>
+            <div className={styles.user}>
+              <h6 className={styles.username}>pruthvii__</h6>
               <span>12h</span>
             </div>
           </div>
-          <div className="post">
+          <div className={styles.post}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             voluptatum, exercitationem unde blanditiis vel, beatae repellendus
-            tenetur pariatur nemo sapiente odit natus ea similique! Explicabo,
-            quia ullam ab laudantium pariatur eos praesentium beatae odio
-            inventore expedita, veniam nisi! Accusamus maxime eaque similique
-            <div className="share_section">
-              <div className="comment">
+            tenetur pariatur nemo sapiente odit natus ea similique! Explicabo
+            <div className={styles.share_section}>
+              <div
+                className={styles.comment}
+                onClick={() => {
+                  setCommentShow(!commentshow);
+                }}
+              >
                 <i class="bx bx-comment"></i>
                 <p>1</p>
               </div>
-              <div className="upvote">
+
+              <div className={styles.upvote}>
                 <i class="bx bx-up-arrow-alt"></i>
                 <p>1</p>
               </div>
-              <div className="share">
+              <div className={styles.share}>
                 <i class="bx bxs-share-alt"></i>
               </div>
             </div>
+            {commentshow && (
+              <div className={styles.comment_section}>
+                <div className={styles.input_comment}>
+                  <input type="text" placeholder="Share Your Thoughts !!" />
+                  <i class="bx bx-send"></i>
+                </div>
+                <div className={styles.all_comments}>
+                  <div className={styles.comment_map}>
+                    <div className={styles.picture}>
+                      <img src={Profile2} alt="" />
+                      <span>pratikshaa__</span>
+                    </div>
+                    <div className={styles.main_comment}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni quasi deleniti molestias officiis rerum, voluptas
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

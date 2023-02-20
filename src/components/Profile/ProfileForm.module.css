@@ -1,0 +1,108 @@
+.flexbox{
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+
+}
+.profile_nav{
+    margin-top: 79px;
+    width: 17%;
+    position: fixed;
+    padding: 0px 0px 0px 1rem;
+}
+.edit_section{
+    margin: 79px 0rem 0rem 247px;
+    /* position: fixed; */
+    border-right: 1px solid rgb(209, 209, 209);
+    width: 50%;
+    padding :015px 15px 15px 25px;
+}
+
+.edit_navigate{
+    margin: 79px 0px 0px 971px;
+    position: fixed;
+    border-right:1px solid rgb(209, 209, 209) ;
+    margin-right: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+.edit_navigate a{
+    text-decoration: none;
+    color: black;
+}
+.profile_edit_nav{
+    margin-top: 1rem;
+}
+.nav{
+    padding: 15px;
+    cursor: pointer;
+}
+.nav:hover{
+    border-left: 4px solid blue;    
+    background-color: #e0e8f9;
+    color: blue;
+}
+.active_nav{
+    color: red;
+}
+
+.inputbasics{
+    border-radius: 15px;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 0px 0px 10px 0px;
+}
+.basicInfo_heading{
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color:rgb(246,248,250);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    font-weight: 600;
+}
+.input_basic_info{
+    padding: 10px 10px 10px 20px;
+    /* border-bottom: 1px solid rgb(209, 209, 209); */
+}
+.input_container{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.name{
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+    
+}
+.name_label{
+    font-size: 11px;
+    color: rgb(80, 80, 80);
+}
+.name_label span{
+    color: red;
+}
+.name input{
+    outline: none;
+    border: none;
+    font-family: "Sora";
+    width: 100%;
+}
+.save_button{
+    color: white;
+    background-color: black;
+    font-family: "Sora";
+    padding: 5px 10px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.active_nav{
+    border-left: 4px solid blue;    
+    background-color: #e0e8f9;
+    color: blue;
+}

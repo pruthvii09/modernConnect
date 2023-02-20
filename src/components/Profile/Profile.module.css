@@ -1,0 +1,228 @@
+.profile_page{
+    display: flex;
+    margin-right: 50px;
+    border-right: 1px solid rgb(207, 207, 207);
+    justify-content: flex-start;
+}
+.profile_page .profile_nav{
+    width: 35%;
+    padding: 0px 0px 0px 1rem;
+}
+.main_profile{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-left: 10px;
+    padding: 10px;
+    width: 100%;
+    gap: 130px;
+}
+.username_edit{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.username_edit button{
+    cursor: pointer;
+    font-family: "Sora";
+    border: 1px solid rgb(206, 205, 205);
+    padding: 4px 12px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    
+}
+.user_image img{
+    margin: 10px 50px 0px 0px;
+    width: 15rem;
+}
+.user_skills{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.skills_img img{
+    width: 2rem;
+}
+.user_skills .skills{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px 10px 2px 10px;
+    background-color: aliceblue;
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 50px;
+}
+.user_skills .skills:hover{
+    background-color: white;
+    -webkit-box-shadow: 5px 7px 20px 0px rgba(0,0,0,0.10);
+-moz-box-shadow: 5px 7px 20px 0px rgba(0,0,0,0.10);
+box-shadow: 5px 7px 20px 0px rgba(0,0,0,0.10);
+}
+.general_info{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    color: rgb(77, 77, 77);
+    margin-top: 50px;
+    position: relative;
+}
+.general_info_flexbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.general_info_icon i{
+    font-size: 20px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.general_user_links{
+    top: 33px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.05);
+-moz-box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.05);
+box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.05);
+}
+.general_link li{
+    gap: 8px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+ul li{
+    padding: 7px;
+    border-radius: 50px;
+}
+ul li:hover{
+    background-color: #e0e8f9;
+    color: blue;
+}
+ul li i{
+    font-size: 25px;
+}
+.user_post{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    border: 1px solid rgb(216, 216, 216);
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+.user_post .post,.user_post .post_other{
+    width: 100%;
+}
+.postHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-right: 1px solid rgb(211, 210, 210);
+    border-bottom: 1px solid rgb(211, 210, 210);
+}
+.main_heading{
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+.sortpost{
+    text-align: center;
+}
+
+.post_fields textarea{
+    outline: none;
+    padding: 10px;
+    border: none;
+    font-family: "Sora";
+    font-size: 1.25rem;
+    resize: none;
+}
+.post_fields{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: relative;
+    margin-right: 4rem;
+}
+.post_fields button{
+    position: absolute;
+    right: 15px;
+    font-family: "Sora";
+    bottom: 3px;
+    font-size: 1rem;
+    padding: 5px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+}
+.post_fields .post_about i{
+    font-size: 1.5rem;
+    position:absolute;
+    top: 8px;
+    right: 5px;
+
+}
+.post_fields .post_about{
+    position: relative;
+    outline: none;
+    color: blue;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+}
+.modal{
+    width: 250px;
+    z-index: 100;
+    border: none;
+    position: absolute;
+    top: 55px;
+    -webkit-box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.75);
+box-shadow: 2px 6px 27px -3px rgba(0,0,0,0.75);
+    /* padding: 10px; */
+    background-color: white;
+    border-radius: 10px;
+}
+.modal .select_post{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.post_types div{
+    padding: 10px;
+}
+.post_types div:hover{
+    cursor:pointer;
+}
+.post_flex{
+    display: flex;
+    align-items: center;
+}
+.post_types img{
+    width: 2rem;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: blue;
+}
+.post_types div:hover{
+    background-color: aliceblue;
+}
+.otherHeading{
+    padding: 20px;
+}

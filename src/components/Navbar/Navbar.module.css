@@ -3,6 +3,9 @@ body{
     font-family: "Sora";
 }
 .nav_menu{
+    z-index: 100;
+    position: fixed;
+    width: 1255px;
     display: flex;
     align-items:center;
     justify-content:space-between;
