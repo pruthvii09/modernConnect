@@ -13,7 +13,7 @@ const Layoutfeed = () => {
   return (
     <div className={styles.feed_section}>
       <div className={`${styles.flexbox} ${styles.feed}`}>
-        <div className={styles.post_input}>
+        {/* <div className={styles.post_input}>
           <div className={styles.user_image}>
             <img src={Profile2} alt="" />
           </div>
@@ -74,7 +74,7 @@ const Layoutfeed = () => {
             ></textarea>
             <button className={styles.post_button}>Post</button>
           </div>
-        </div>
+        </div> */}
         <div className={styles.map_div}>
           <div className={styles.user_info}>
             <img src={Profile} alt="" />

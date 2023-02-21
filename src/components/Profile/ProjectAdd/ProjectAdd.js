@@ -25,11 +25,53 @@ const ProjectAdd = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.name}>
-                <div className={styles.name_label}>
-                  Tag Line <span>*</span>
+              <div className={styles.project_input}>
+                <div className={styles.project_name}>
+                  <div>
+                    Tag Line <span>*</span>
+                  </div>
+                  <div className={styles.name_label}>
+                    Add project title in 60 characters or less.
+                  </div>
                 </div>
-                <input type="text" />
+                <div className={styles.name}>
+                  <div className={styles.name_label}>
+                    Tag Line <span>*</span>
+                  </div>
+                  <input type="text" />
+                </div>
+              </div>
+              <div className={styles.project_input}>
+                <div className={styles.project_name}>
+                  <div>
+                    Project Link <span>*</span>
+                  </div>
+                  <div className={styles.name_label}>
+                    It could be a link to demo, document, code repository, etc.
+                  </div>
+                </div>
+                <div className={styles.name}>
+                  <div className={styles.name_label}>
+                    Project Link <span>*</span>
+                  </div>
+                  <input type="text" />
+                </div>
+              </div>
+              <div className={styles.project_input}>
+                <div className={styles.project_name}>
+                  <div>
+                    Project Link <span>*</span>
+                  </div>
+                  <div className={styles.name_label}>
+                    It could be a link to demo, document, code repository, etc.
+                  </div>
+                </div>
+                <div className={styles.name}>
+                  <div className={styles.name_label}>
+                    Project Link <span>*</span>
+                  </div>
+                  <input type="text" />
+                </div>
               </div>
             </div>
             <button className={styles.save_button}>Save</button>

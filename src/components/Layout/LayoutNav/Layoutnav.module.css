@@ -3,8 +3,11 @@
     /* width: 75%; */
 }
 .navigate{
-    width: 85%;
+    width: 224px;
     padding: 1rem 1rem;
+    margin-top: 79px;
+    position: fixed;
+    height: 100vh;
 }
 .flexbox a{
     text-decoration: none;

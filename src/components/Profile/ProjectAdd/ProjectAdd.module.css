@@ -1,5 +1,6 @@
 
 .inputbasics{
+    margin-left: 30px;
     border-radius: 15px;
     border: 1px solid rgb(209, 209, 209);
     padding: 0px 0px 10px 0px;
@@ -52,8 +53,13 @@
     border-radius: 5px;
 }
 .project_input{
+    padding: 30px 0px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 3rem;
+    border-bottom: 1px solid rgb(207,207,207);
+}
+.project_name{
+    width: 40%;
 }

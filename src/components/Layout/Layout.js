@@ -8,6 +8,7 @@ const Layout = () => {
   return (
     <div className={styles.layout_menu}>
       <Layoutnav />
+
       <Layoutfeed />
       <Layoutother />
     </div>

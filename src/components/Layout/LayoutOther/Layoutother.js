@@ -4,7 +4,7 @@ import Profile from "../../../assets/profile.png";
 
 const Layoutother = () => {
   return (
-    <div>
+    <div className={styles.main_other}>
       <div className={`${styles.flexbox} ${styles.other}`}>
         <div className={styles.search_box}>
           <i class="bx bx-search-alt-2"></i>

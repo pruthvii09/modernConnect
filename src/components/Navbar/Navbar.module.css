@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600;800&display=swap');
-body{
-    font-family: "Sora";
-}
+
 .nav_menu{
+    background-color: white;
     z-index: 100;
     position: fixed;
-    width: 1255px;
+    width: 100%;
     display: flex;
     align-items:center;
     justify-content:space-between;
     padding: 1.5rem 3rem 1.25rem 3rem;
+    right: 0;
     border-bottom: 1px solid #b9b9b9;
 }
 .nav_menu .nav_heading{

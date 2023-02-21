@@ -1,5 +1,8 @@
 .feed_section{
     border-right: 1px solid rgb(207, 207, 207);
+    margin-top: 79px;
+    margin-right: 257px;
+    margin-left: 256px;
 }
 .user_info{
     display: flex;
@@ -126,12 +129,14 @@ box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
     font-family: "Sora";
     font-size: 1.25rem;
     resize: none;
+    z-index: -1;
 }
 .post_fields{
     display: flex;
     gap: 15px;
     flex-direction: column;
     position: relative;
+    z-index: -1;
 }
 .post_fields button{
     position: absolute;

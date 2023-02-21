@@ -16,7 +16,7 @@ const Profile = () => {
       <div className={styles.profile_nav}>
         <LayoutNav />
       </div>
-      <div>
+      <div className={styles.peofile_page}>
         <div className={styles.main_profile}>
           <div>
             <div className={styles.username_edit}>

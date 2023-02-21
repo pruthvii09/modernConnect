@@ -5,7 +5,6 @@
 
 }
 .profile_nav{
-    margin-top: 79px;
     width: 17%;
     position: fixed;
     padding: 0px 0px 0px 1rem;
@@ -51,7 +50,8 @@
 .inputbasics{
     border-radius: 15px;
     border: 1px solid rgb(209, 209, 209);
-    padding: 0px 0px 10px 0px;
+    /* padding: 0px 0px 10px 0px; */
+    margin-left: 30px;
 }
 .basicInfo_heading{
     padding: 15px;
