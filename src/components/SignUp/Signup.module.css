@@ -1,0 +1,134 @@
+.image_div img{
+    /* margin-top: 80px; */
+    width: 30rem;
+    margin-bottom: 200px;
+}
+.image_div{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.form_div{
+    width: 40%;
+    margin-left: 80px;
+    margin-top: 85px;
+}
+.signup_page{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+.edit_navigate{
+    width:25% ;
+}
+.inputbasics{
+    border-radius: 15px;
+    border: 1px solid rgb(209, 209, 209);
+    margin-left: 30px;
+}
+.basicInfo_heading{
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color:rgb(246,248,250);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    font-weight: 600;
+}
+.input_basic_info{
+    padding: 10px 10px 10px 20px;
+    /* border-bottom: 1px solid rgb(209, 209, 209); */
+}
+.userImage img{
+    width: 5rem;
+    border-radius: 100%;
+}
+.image_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.image_container label{
+    color: blue;
+    cursor: pointer;
+}
+.input_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 66px;
+}
+.name{
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    /* width: 35%; */
+    padding: 5px;
+    
+}
+.name_label{
+    font-size: 11px;
+    color: rgb(80, 80, 80);
+}
+.name_label span{
+    color: red;
+}
+.name input{
+    outline: none;
+    border: none;
+    font-family: "Sora";
+}
+.user_bio{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 209, 209);
+    margin-top: 1rem;
+}
+.user_bio textarea{
+    font-size: 1rem;
+    font-family: "Sora";
+    outline: none;
+    border: none;
+    resize: none;
+}
+.bio_description{
+    margin-top: 3px;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+}
+.location_details{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.website_details{
+    width: 50%;
+    margin-top: 1.5rem;
+    padding-bottom: 20px;
+}
+.save_button{
+    font-family: "Sora";
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal_container{
+    position: absolute;
+    top: 30%;
+    background-color: white;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
+}

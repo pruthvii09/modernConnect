@@ -1,8 +1,13 @@
 .profile_page{
     display: flex;
+    flex-direction: column;
     margin-right: 50px;
     border-right: 1px solid rgb(207, 207, 207);
     justify-content: flex-start;
+    /* margin-left: 100px; */
+}
+.main_profile_page{
+    margin-left: 300px;
 }
 .profile_page .profile_nav{
     width: 35%;
@@ -11,7 +16,7 @@
 .main_profile{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 111px;
+    /* margin-left: 111px; */
     padding: 10px;
     width: 100%;
     gap: 130px;
@@ -117,10 +122,10 @@ ul li i{
     margin-top: 4rem;
     border: 1px solid rgb(216, 216, 216);
     display: flex;
-    justify-content: space-around;
     padding: 8px;
+    margin-right: 180px;
 }
-.user_post .post,.user_post .post_other{
+.user_post .post{
     width: 100%;
 }
 .postHeading{
