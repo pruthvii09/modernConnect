@@ -26,7 +26,7 @@ const Login = () => {
       }
     );
     const headers = res.headers;
-    console.log(res.headers);
+    console.log(...headers);
   };
   return (
     <div className={styles.main_login}>
