@@ -31,9 +31,6 @@ const Signup = () => {
       }
     );
     result = await result.json();
-    // localStorage.setItem("JWT_TOKEN", result.JWT_TOKEN);
-    // let arr = result.AUTHENTICATION_TOKEN.split(" ");
-    // localStorage.setItem("AUTHENTICATION_TOKEN", arr[1]);
     console.log("result sign up", result);
     setModal(true);
   };
@@ -48,8 +45,7 @@ const Signup = () => {
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
-          Authorization:
-            "Token " + localStorage.getItem("AUTHENTICATION_TOKEN"),
+          Authorization: "Token+ Nq40gMl3YGTlW63rKcqLtKUQ88AbQ8qg",
         },
       }
     );

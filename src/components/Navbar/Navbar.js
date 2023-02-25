@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 export const Navbar = () => {
   return (
@@ -8,8 +9,12 @@ export const Navbar = () => {
           ModernConnect
         </div>
         <div className={styles.nav_login}>
-          <div className={styles.login}>Login</div>
-          <div className={styles.signup}>Signup</div>
+          <Link to={"/signup"}>
+            <div className={styles.signup}>Signup</div>
+          </Link>
+          <Link to={"/login"}>
+            <div className={styles.login}>Login</div>
+          </Link>
         </div>
       </nav>
     </div>

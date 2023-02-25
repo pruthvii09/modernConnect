@@ -23,6 +23,10 @@
     justify-content: space-between;
     /* padding-left: 2rem; */
 }
+.nav_login a{
+    text-decoration: none;
+    color: black;
+}
 .nav_login .login{
     padding: 0.4rem 1rem 0.4rem 1rem;
     background: linear-gradient(140deg,#0d6ddf,#001ec1 80%);

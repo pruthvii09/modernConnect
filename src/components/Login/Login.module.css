@@ -1,28 +1,16 @@
-.image_div img{
-    /* margin-top: 80px; */
-    width: 30rem;
-    margin-bottom: 200px;
-}
-.image_div{
-    width: 50%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-.form_div{
-    width: 40%;
-    margin-left: 80px;
-    margin-top: 85px;
-}
-.signup_page{
+.main_login{
+    /* margin-top: 100px; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
-
-.edit_navigate{
-    width:25% ;
+.login_div{
+    width: 40%;
+    margin-top: 136px;
+}
+.image_div img{
+    margin-top: 75px;
+    width: 30rem;
 }
 .inputbasics{
     border-radius: 15px;
@@ -41,29 +29,16 @@
     padding: 10px 10px 10px 20px;
     /* border-bottom: 1px solid rgb(209, 209, 209); */
 }
-.userImage img{
-    width: 5rem;
-    border-radius: 100%;
-}
-.image_container{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.image_container label{
-    color: blue;
-    cursor: pointer;
-}
 .input_container{
-    display: flex;
-    align-items: center;
+    display: flex; 
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 66px;
+    gap: 15px;
 }
 .name{
     border: 1px solid rgb(212, 212, 212);
     border-radius: 5px;
-    /* width: 35%; */
+    width: 40%;
     padding: 5px;
     
 }
@@ -102,12 +77,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 4rem;
 }
 .website_details{
-    width: 50%;
     margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
     padding-bottom: 20px;
+    border-bottom: 1px solid rgb(209, 209, 209);
 }
 .save_button{
     font-family: "Sora";
@@ -117,15 +96,4 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
-}
-.modal_container{
-    position: absolute;
-    top: 30%;
-    background-color: white;
-    border: 1px solid rgb(209, 209, 209);
-    border-radius: 5px;
-    padding: 10px;
-    -webkit-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
-box-shadow: 5px 6px 21px -6px rgba(0,0,0,0.75);
 }
