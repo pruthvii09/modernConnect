@@ -38,6 +38,12 @@
     justify-content: flex-start;
     gap: 7rem;
 }
+.input_container_tag{
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
 .name{
     border: 1px solid rgb(212, 212, 212);
     border-radius: 5px;
@@ -132,5 +138,33 @@
     display: flex; 
     align-items: center;
     justify-content: flex-start;
-    gap: 4rem;
+    gap: 1rem;
+}
+.skill_tag{
+    width: 100%;
+}
+.all_tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag i:hover{
+    color: red;
+}
+.tag{
+    cursor: pointer;
+    color: blue;
+    background-color:aliceblue ;
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 50px;
+}
+.tag i{
+    font-size: 20px;
+    /* color: black; */
+}
+.tag span{
+    font-size: 13px;
 }

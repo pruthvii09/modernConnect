@@ -36,3 +36,7 @@
 .nav_login .signup{
     padding: 0rem 1rem 0rem 1rem;
 }
+.flex_box{
+    display: flex;
+    align-items: center;
+}

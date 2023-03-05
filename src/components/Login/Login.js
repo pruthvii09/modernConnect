@@ -2,31 +2,44 @@ import React, { useState } from "react";
 import styles from "./Login.module.css";
 
 import Profile from "../../assets/8401.jpg";
-import { useCookies } from "react-cookie";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/userSlice";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [data, setData] = useState({
     user_name: "",
     password: "",
   });
-
-  const [cookies, setCookie] = useCookies();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleLogin = async () => {
+    console.log(data);
     let res = await fetch(
       "https://modern-connect.onrender.com/api/v1/user/login/",
       {
         method: "POST",
-        credentials: "include",
-        withCredentials: true,
         body: JSON.stringify(data),
         headers: {
-          "Content-Type": "application/json",
+          "Content-type": "application/json",
         },
       }
     );
-    const headers = res.headers;
-    console.log(...headers);
+    if (res.ok) {
+      res = await res.json();
+      localStorage.setItem("TOKEN", res.AUTHENTICATION_TOKEN);
+      console.log(res);
+      dispatch(
+        login({
+          user_name: data.user_name,
+        })
+      );
+      navigate("/profile");
+    } else {
+      console.log("errorr", res);
+    }
+    console.log(res);
   };
   return (
     <div className={styles.main_login}>

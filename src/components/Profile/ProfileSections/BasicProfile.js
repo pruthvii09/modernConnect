@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Profile from "../../../assets/profile.png";
 import styles from "./BasicProfile.module.css";
 
 const BasicProfile = () => {
+  const [tag, setTag] = useState([]);
+  const addTags = (e) => {
+    if (e.key === "Enter") {
+      setTag([...tag, e.target.value]);
+      e.target.value = "";
+    }
+  };
+  const removeTag = (indexToRemove) => {
+    const newTag = tag.filter((tags) => tags !== indexToRemove);
+    setTag(newTag);
+  };
+
   return (
     <div>
       <div className={styles.basicInfo}>
@@ -33,7 +45,7 @@ const BasicProfile = () => {
               <div className={styles.name_label}>
                 Brief Bio <span>*</span>
               </div>
-              <textarea name="" id="" cols="65" rows="5"></textarea>
+              <textarea name="" id="" cols="45" rows="5"></textarea>
             </div>
             <div className={styles.bio_description}>
               This is the very first thing peers read about you after your name.
@@ -63,10 +75,20 @@ const BasicProfile = () => {
         <div className={styles.inputbasics}>
           <div className={styles.basicInfo_heading}>Profile Tags</div>
           <div className={styles.input_basic_info}>
-            <div className={styles.input_container}>
+            <div className={styles.input_container_tag}>
               <div className={styles.name}>
                 <div className={styles.name_label}>Search for skills</div>
-                <input type="text" />
+                <input type="text" onKeyUp={addTags} />
+              </div>
+              <div className={styles.skill_tag}>
+                <ul className={styles.all_tags}>
+                  {tag.map((tag, index) => (
+                    <li className={styles.tag} key={index}>
+                      <span>{tag}</span>
+                      <i class="bx bx-x" onClick={() => removeTag(tag)}></i>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
             <div className={styles.bio_description}>Add minimum 3 skills</div>

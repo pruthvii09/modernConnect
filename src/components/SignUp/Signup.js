@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import styles from "./Signup.module.css";
 import Profile from "../../assets/8401.jpg";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/userSlice";
 
 const Signup = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const [modal, setModal] = useState(false);
-  const [otp, setOtp] = useState("");
+  const [otpData, setOtpData] = useState({
+    otp: "",
+  });
   const [data, setData] = useState({
     full_name: "",
     user_name: "",
@@ -17,9 +25,10 @@ const Signup = () => {
   });
 
   const handleRegister = async () => {
+    setLoading(true);
     console.log("Hi");
     console.log(data);
-    let result = await fetch(
+    let res = await fetch(
       "https://modern-connect.onrender.com/api/v1/user/signup/",
       {
         method: "POST",
@@ -30,28 +39,44 @@ const Signup = () => {
         },
       }
     );
-    result = await result.json();
-    console.log("result sign up", result);
-    setModal(true);
+    if (res.ok) {
+      res = await res.json();
+      localStorage.setItem("TOKEN", res.AUTHENTICATION_TOKEN);
+      console.log(res);
+      setModal(true);
+      setLoading(false);
+    } else {
+      console.log(res);
+      setLoading(false);
+    }
   };
 
   const handleVerify = async () => {
     console.log("Hello");
-    let result = await fetch(
+    console.log(otpData);
+    setLoading(true);
+    let response = await fetch(
       "https://modern-connect.onrender.com/api/v1/user/verify_email/",
       {
         method: "POST",
-        body: JSON.stringify(otp),
+        body: JSON.stringify(otpData),
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Token+ Nq40gMl3YGTlW63rKcqLtKUQ88AbQ8qg",
+          Authorization: "Token " + localStorage.getItem("TOKEN"),
         },
       }
     );
-    result = await result.json();
-    console.log("Verify : ", result);
-    console.log("Token " + localStorage.getItem("AUTHENTICATION_TOKEN"));
+    if (response.ok) {
+      response = await response.json();
+      console.log("Verify : ", response);
+      dispatch(login({ ...data }));
+      setLoading(false);
+      navigate("/profile");
+    } else {
+      console.log(response);
+      setLoading(false);
+    }
   };
 
   return (
@@ -176,9 +201,12 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              <button className={styles.save_button} onClick={handleRegister}>
-                Register
-              </button>
+              <div className={styles.button_div}>
+                <button className={styles.save_button} onClick={handleRegister}>
+                  Save
+                  {loading && <div className={styles.loader}></div>}
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -198,14 +226,19 @@ const Signup = () => {
               </div>
               <input
                 type="text"
-                onChange={(e) => setOtp(e.target.value)}
-                value={otp}
+                onChange={(e) =>
+                  setOtpData({ ...otpData, otp: e.target.value })
+                }
+                value={otpData.otp}
               />
             </div>
           </div>
-          <button className={styles.save_button} onClick={handleVerify}>
-            Verify Email
-          </button>
+          <div className={styles.button_div}>
+            <button className={styles.save_button} onClick={handleVerify}>
+              Save
+              {loading && <div className={styles.loader}></div>}
+            </button>
+          </div>
         </div>
       )}
     </div>

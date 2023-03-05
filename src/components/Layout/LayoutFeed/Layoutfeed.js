@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Profile from "../../../assets/profile.png";
 import Profile2 from "../../../assets/profile2.png";
-import Idea from "../../../assets/idea.png";
-import Hand from "../../../assets/agreement.png";
-import Trophy from "../../../assets/trophy.png";
+// import Idea from "../../../assets/idea.png";
+// import Hand from "../../../assets/agreement.png";
+// import Trophy from "../../../assets/trophy.png";
 import styles from "./Layoutfeed.module.css";
 
 const Layoutfeed = () => {
   const [commentshow, setCommentShow] = useState(false);
-  const [post, setPost] = useState(false);
-  const [PostType, setPostType] = useState("Idea");
+  // const [post, setPost] = useState(false);
+  // const [PostType, setPostType] = useState("Idea");
   return (
     <div className={styles.feed_section}>
       <div className={`${styles.flexbox} ${styles.feed}`}>

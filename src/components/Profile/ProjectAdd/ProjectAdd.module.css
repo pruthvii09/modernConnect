@@ -51,15 +51,78 @@
     padding: 5px 10px;
     margin-top: 1rem;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .project_input{
     padding: 30px 0px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: flex-start;
     gap: 3rem;
     border-bottom: 1px solid rgb(207,207,207);
 }
 .project_name{
+    font-size: 15px;
     width: 40%;
+}
+.project_name span{
+    color: red;
+}
+textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    font-family: "Sora";
+}
+
+.loader {
+    border: 2px solid rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-radius: 50%;
+}
+.loader {
+    border: 2px solid rgb(255, 255, 255);
+    border-left-color: transparent;
+    width: 12px;
+    height: 12px;
+}
+  
+.loader{
+    border: 2px solid rgb(255, 255, 255);
+    border-left-color: transparent;
+    width: 12px;
+    height: 12px;
+    -webkit-animation: spin89345 1s linear infinite;
+            animation: spin89345 1s linear infinite;
+}
+  
+@-webkit-keyframes spin89345 {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin89345 {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+
+.button_div{
+    display: flex;
+    align-items: center;
 }

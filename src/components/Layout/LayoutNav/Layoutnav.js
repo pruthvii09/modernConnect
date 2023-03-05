@@ -9,7 +9,7 @@ const Layoutnav = () => {
         <Link to="/feed">
           <div className={styles.nav_link}>
             <i className="bx bx-home-alt"></i>
-            <span>Scroll</span>
+            <span>Feed</span>
           </div>
         </Link>
         <Link>
